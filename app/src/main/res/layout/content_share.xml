@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lovebg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.standerstudio.love.calculator.ShareActivity"
+    tools:showIn="@layout/activity_share">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:layout_above="@+id/footer">
+        <LinearLayout
+            android:id="@+id/photage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="5dp"
+
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+            <ImageView
+                android:id="@+id/your_img1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/love_src"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+            <ImageView
+                android:id="@+id/part_img1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/love_src"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@+id/name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nametag"
+            android:layout_marginBottom="30dp"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/circleView"
+            android:layout_centerHorizontal="true"
+            android:text="SAM  loves Salva"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/persentage"
+            android:layout_marginBottom="30dp"
+            android:textSize="50sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/nametag"
+            android:layout_centerHorizontal="true"
+            android:text="100%"
+
+            />
+    </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="@color/colorPrimary"
+
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btn_rate"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rate"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btn_more"
+                android:layout_centerInParent="true"
+                android:background="@drawable/more"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btn_save"
+                android:layout_centerInParent="true"
+                android:background="@drawable/save"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btn_share"
+                android:layout_centerInParent="true"
+                android:background="@drawable/share"/>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

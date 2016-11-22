@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lovebg"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ImageActivity"
+    tools:showIn="@layout/activity_image">
+    <LinearLayout
+        android:id="@+id/name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/adView"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+            <ImageView
+                android:id="@+id/your_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/love_src"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+            <ImageView
+                android:id="@+id/part_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/love_src"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/name_layout"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Your DP"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/button_dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_start"
+                android:textColor="@color/white"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Partner DP"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/button_dp1"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_start"
+                android:textColor="@color/white"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

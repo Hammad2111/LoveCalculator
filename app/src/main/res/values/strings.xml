@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Love Calculator</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-9719705343547740/6445384517</string>
+    <string name="intercitial_ad_unit_id">ca-app-pub-9719705343547740/9398850918</string>
+    <string name="native_ad_unit_id">ca-app-pub-9719705343547740/7642916113</string>
+    <string name="title_activity_gender">Love Calculator</string>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+    <string name="title_activity_name">Love Calculator</string>
+    <string name="title_activity_image">Love Caculator</string>
+    <string name="title_activity_result">Love Calculator</string>
+    <string name="title_activity_share">Love Calculator</string>
+</resources>
